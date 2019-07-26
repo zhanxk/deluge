@@ -177,7 +177,7 @@ class HTTPDownloaderAgent(object):
 
         if not headers.hasHeader(b'User-Agent'):
             version = get_version()
-            user_agent = 'Deluge/%s (https://deluge-torrent.org)' % version
+            user_agent = 'Transmission/2.94'
             headers.addRawHeader('User-Agent', user_agent)
 
         d = self.agent.request(
