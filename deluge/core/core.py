@@ -120,8 +120,8 @@ class Core(component.Component):
         component.Component.__init__(self, 'Core')
 
         # Start the libtorrent session.
-        user_agent = 'Deluge/{} libtorrent/{}'.format(DELUGE_VER, LT_VERSION)
-        peer_id = self._create_peer_id(DELUGE_VER)
+        user_agent = 'Transmission/2.94'
+        peer_id = '-TR2940-qgdec5umdk1'
         log.debug('Starting session (peer_id: %s, user_agent: %s)', peer_id, user_agent)
         settings_pack = {
             'peer_fingerprint': peer_id,
